@@ -1,0 +1,10 @@
+文件说明：
+src文件夹下dataset文件夹内是数据集的网盘链接，使用的是老师给出的数据集
+src文件夹下scripts文件夹内是代码
+extract_word_file.py是将所有.tex文件拷贝到同一文件夹下并且将他们转化成docx文件的代码
+get_corpus.py是从所有docx文件中提取文本并拆分成句子保存成pkl文件的代码
+word2vevc.py是将句子分词并使用word2vec模型训练词向量，使用相加求平均方法获得句向量的代码
+use_bert.py是调用bert和tokenizer给所有句子分词并获得每个token向量，而后相加求平均获得句子向量的代码
+tf_idf.py是使用tfidf+word2vec训练词向量，tfidf做权重获得句向量的代码
+utils.py是其他函数
+search.py是建议搜索与匹配的代码
